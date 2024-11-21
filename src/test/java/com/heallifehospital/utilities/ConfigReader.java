@@ -3,7 +3,11 @@ package com.heallifehospital.utilities;
 import java.io.FileInputStream;
 import java.util.Properties;
 
+/**
+ * reads the properties file configuration.properties
+ */
 public class ConfigReader {
+
     private static Properties properties;
 
     static {

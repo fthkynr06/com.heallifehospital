@@ -21,7 +21,7 @@ import org.junit.runner.RunWith;
         publish = true,
         monochrome = true,
         dryRun = false,
-        tags = "@prod"
+        tags = "@E2E"
 )
 public class CukesRunner {
 }

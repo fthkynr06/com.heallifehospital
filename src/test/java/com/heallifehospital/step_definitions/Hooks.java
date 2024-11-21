@@ -1,6 +1,5 @@
 package com.heallifehospital.step_definitions;
 
-
 import com.heallifehospital.utilities.ConfigReader;
 import com.heallifehospital.utilities.Driver;
 import io.cucumber.java.After;
@@ -8,7 +7,8 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import java.time.Duration;
 
 public class Hooks {
@@ -29,12 +29,12 @@ public class Hooks {
 //        ReusableMethods.waitFor(1);
 //        Driver.getDriver().switchTo().defaultContent();
 
-       // Driver.getDriver().findElement(By.xpath("//button[@class='_hj-ONMkJ__MinimizedWidgetMessage__close _hj-dk3Fb__styles__iconX _hj-L5SMl__styles__icon']")).click();
-       // ReusableMethods.closeCerez1();
+        // Driver.getDriver().findElement(By.xpath("//button[@class='_hj-ONMkJ__MinimizedWidgetMessage__close _hj-dk3Fb__styles__iconX _hj-L5SMl__styles__icon']")).click();
+        // ReusableMethods.closeCerez1();
 //        ReusableMethods.clickWithJS(Driver.getDriver().findElement(By.xpath("//span[normalize-space()='X']")));
 //        ReusableMethods.waitFor(2);
 //        Driver.getDriver().switchTo().frame(Driver.getDriver().findElement(By.xpath("//*[contains(@id,'jetlinkWidgetFrame')]")));
-       // ReusableMethods.waitFor(2);
+        // ReusableMethods.waitFor(2);
         //ReusableMethods.clickWithJS(Driver.getDriver().findElement(By.xpath("//div[@class='boxclose']")));
 //        ReusableMethods.waitFor(1);
 //        Driver.getDriver().switchTo().defaultContent();
@@ -53,7 +53,7 @@ public class Hooks {
             scenario.attach(screenshot,"image/png","screenshot");
         }
 
-       Driver.closeDriver();
+       // Driver.closeDriver();
 
     }
 
