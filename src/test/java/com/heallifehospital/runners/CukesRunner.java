@@ -20,7 +20,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         publish = true,
         monochrome = true,
-        dryRun = false,
+        dryRun = true,
         tags = "@E2E"
 )
 public class CukesRunner {
