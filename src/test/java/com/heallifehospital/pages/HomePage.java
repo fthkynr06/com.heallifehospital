@@ -10,4 +10,13 @@ import java.util.List;
 import java.util.Random;
 
 public class HomePage extends BasePage {
-}
+
+        @FindBy(xpath = "//*[text()='Latest News']")
+        public WebElement verifyLatestNews;
+
+        @FindBy(xpath ="(//a[text()='Home'])[1]")
+        public WebElement verifyHomeTitle;
+
+    }
+
+
