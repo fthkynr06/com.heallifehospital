@@ -17,6 +17,21 @@ public class HomePage extends BasePage {
         @FindBy(xpath ="(//a[text()='Home'])[1]")
         public WebElement verifyHomeTitle;
 
+        @FindBy(xpath = "//a[@class='navbar-brand logo']")
+        public WebElement verifySiteLogo;
+
+        @FindBy(xpath = "//a[@href='../form/appointment']")
+        public WebElement verifyAppointmentTitle;
+
+        @FindBy(xpath = "//a[@class='dropdown-toggle']")
+        public WebElement verifyAboutUsTitle;
+
+        @FindBy(xpath = "(//a[@href='https://qa.heallifehospital.com/page/gallery'])[1]")
+        public WebElement verifyGalleryTitle;
+
+        @FindBy(xpath = "(//a[@href='https://qa.heallifehospital.com/page/contact-us'])[1]")
+        public WebElement verifyContactUsTitle;
+
     }
 
 
