@@ -52,4 +52,41 @@ public class TopBarElementsDefinitions {
         homePage.verifyContactUsTitle.isDisplayed();
         System.out.println("Verify visibility of Contact Us Title is successful =" + verifyContactUsTitleText);
     }
+    @Given("Verify clickability of the Site Logo")
+    public void verify_clickability_of_the_site_logo() {
+        String verifyClickabilityofSiteLogoText = homePage.verifySiteLogo.getText();
+        homePage.verifySiteLogo.isEnabled();
+        System.out.println("Verifying clickability of the Site Logo is successful =" + verifyClickabilityofSiteLogoText);
+    }
+    @Given("Verify clickability of Home Title")
+    public void verify_clickability_of_home_title() {
+        String verifyClickabilityOfHomeTitleText = homePage.verifyHomeTitle.getText();
+        homePage.verifyHomeTitle.isEnabled();
+        System.out.println("Verifying clickability of Home Title is successful =" + verifyClickabilityOfHomeTitleText);
+
+    }
+    @Then("Verify clickability of Appointment Title")
+    public void verify_clickability_of_appointment_title() {
+        String verifyClickabilityOfAppointmentTitleText = homePage.verifyAppointmentTitle.getText();
+        homePage.verifyAppointmentTitle.isEnabled();
+        System.out.println("Verifying clickability of Appointment Title is successful =" + verifyClickabilityOfAppointmentTitleText);
+    }
+    @Then("Verify clickability of About Us Title")
+    public void verify_clickability_of_about_us_title() {
+        String verifyClickabilityOfAboutUsTitleText = homePage.verifyAboutUsTitle.getText();
+        homePage.verifyAboutUsTitle.isEnabled();
+        System.out.println("Verifying clickability of About Us Title is successful =" + verifyClickabilityOfAboutUsTitleText);
+    }
+    @Then("Verify clickability of Gallery Title")
+    public void verify_clickability_of_gallery_title() {
+        String verifyClickabilityOfGalleryTitleText = homePage.verifyGalleryTitle.getText();
+        homePage.verifyGalleryTitle.isEnabled();
+        System.out.println("Verifying clickability of Gallery Title is successful =" + verifyClickabilityOfGalleryTitleText);
+    }
+    @Then("Verify clickability of Contact Us Title")
+    public void verify_clickability_of_contact_us_title() {
+        String verifyClickabilityOfContactUsTitleText = homePage.verifyContactUsTitle.getText();
+        homePage.verifyGalleryTitle.isDisplayed();
+        System.out.println("Verifying clickability of Gallery Title is successful =" + verifyClickabilityOfContactUsTitleText);
+    }
 }
